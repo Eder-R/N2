@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'database/db.dart';
-import 'models/moeda.dart';
+import '../database/db.dart';
+import '../models/moeda.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqlite_api.dart';
 import 'package:http/http.dart' as http;

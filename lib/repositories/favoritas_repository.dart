@@ -1,10 +1,10 @@
 import 'dart:collection';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'databases/db_firestore.dart';
-import 'models/moeda.dart';
-import 'repositories/moeda_repository.dart';
-import 'services/auth_service.dart';
+import '../databases/db_firestore.dart';
+import '../models/moeda.dart';
+import '../repositories/moeda_repository.dart';
+import '../services/auth_service.dart';
 import 'package:flutter/material.dart';
 
 class FavoritasRepository extends ChangeNotifier {

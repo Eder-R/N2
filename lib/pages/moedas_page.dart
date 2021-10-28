@@ -1,8 +1,8 @@
-import 'configs/app_settings.dart';
-import 'models/moeda.dart';
-import 'pages/moedas_detalhes_page.dart';
-import 'repositories/favoritas_repository.dart';
-import 'repositories/moeda_repository.dart';
+import '../configs/app_settings.dart';
+import '../models/moeda.dart';
+import '../pages/moedas_detalhes_page.dart';
+import '../repositories/favoritas_repository.dart';
+import '../repositories/moeda_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';

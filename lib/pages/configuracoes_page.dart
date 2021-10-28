@@ -1,6 +1,6 @@
-import 'configs/app_settings.dart';
-import 'repositories/conta_repository.dart';
-import 'services/auth_service.dart';
+import '../configs/app_settings.dart';
+import '../repositories/conta_repository.dart';
+import '../services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';

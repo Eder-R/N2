@@ -1,6 +1,6 @@
-import 'configs/app_settings.dart';
-import 'models/posicao.dart';
-import 'repositories/conta_repository.dart';
+import '../configs/app_settings.dart';
+import '../models/posicao.dart';
+import '../repositories/conta_repository.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

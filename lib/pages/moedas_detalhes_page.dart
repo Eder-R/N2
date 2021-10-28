@@ -1,7 +1,7 @@
-import 'configs/app_settings.dart';
-import 'models/moeda.dart';
-import 'repositories/conta_repository.dart';
-import 'widgets/grafico_historico.dart';
+import '../configs/app_settings.dart';
+import '../models/moeda.dart';
+import '../repositories/conta_repository.dart';
+import '../widgets/grafico_historico.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
