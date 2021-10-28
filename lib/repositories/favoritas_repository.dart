@@ -55,12 +55,12 @@ class FavoritasRepository extends ChangeNotifier {
             .collection('usuarios/${auth.usuario!.uid}/favoritas')
             .doc(moeda.sigla)
             .set({
-          'moeda': moeda.nome,
-          'sigla': moeda.sigla,
-          'preco': moeda.preco,
+              'moeda': moeda.nome,
+              'sigla': moeda.sigla,
+              'preco': moeda.preco,
+            });
+          }
         });
-      }
-    });
     notifyListeners();
   }
 
