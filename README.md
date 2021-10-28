@@ -1,3 +1,3 @@
-# 🪙 Cripto Moedas
+# Cripto Moedas
 
-Eder e Eduardo
+Eder Ramos,  Eduardo Paterno e Rosângela Furtado.

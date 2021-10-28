@@ -1,4 +1,4 @@
-import 'pages/home_page.dart';
+import 'widgets/moeda_card.dart';
 import 'widgets/auth_check.dart';
 import 'package:flutter/material.dart';
 
