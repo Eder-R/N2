@@ -19,7 +19,7 @@ class _MoedasPageState extends State<MoedasPage> {
   late NumberFormat real;
   late Map<String, String> loc;
   List<Moeda> selecionadas = [];
-  late FavoritasRepository favoritas;
+  // late FavoritasRepository favoritas;
   late MoedaRepository moedas;
 
   readNumberFormat() {
@@ -96,7 +96,7 @@ class _MoedasPageState extends State<MoedasPage> {
   @override
   Widget build(BuildContext context) {
     // favoritas = Provider.of<FavoritasRepository>(context);
-    favoritas = context.watch<FavoritasRepository>();
+    // favoritas = context.watch<FavoritasRepository>();
     moedas = context.watch<MoedaRepository>();
     tabela = moedas.tabela;
     readNumberFormat();
@@ -128,9 +128,9 @@ class _MoedasPageState extends State<MoedasPage> {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  if (favoritas.lista
-                      .any((fav) => fav.sigla == tabela[moeda].sigla))
-                    Icon(Icons.circle, color: Colors.amber, size: 8),
+                  // if (favoritas.lista
+                  //     .any((fav) => fav.sigla == tabela[moeda].sigla))
+                  //   Icon(Icons.circle, color: Colors.amber, size: 8),
                 ],
               ),
               trailing: Text(
@@ -155,22 +155,22 @@ class _MoedasPageState extends State<MoedasPage> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: selecionadas.isNotEmpty
-          ? FloatingActionButton.extended(
-              onPressed: () {
-                favoritas.saveAll(selecionadas);
-                limparSelecionadas();
-              },
-              icon: Icon(Icons.star),
-              label: Text(
-                'FAVORITAR',
-                style: TextStyle(
-                  letterSpacing: 0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            )
-          : null,
+      // floatingActionButton: selecionadas.isNotEmpty
+          // ? FloatingActionButton.extended(
+              // onPressed: () {
+              //   favoritas.saveAll(selecionadas);
+              //   limparSelecionadas();
+              // },
+              // icon: Icon(Icons.star),
+            //   label: Text(
+            //     'FAVORITAR',
+            //     style: TextStyle(
+            //       letterSpacing: 0,
+            //       fontWeight: FontWeight.bold,
+            //     ),
+            //   ),
+            // )
+          // : null,
     );
   }
 }

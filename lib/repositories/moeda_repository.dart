@@ -27,7 +27,7 @@ class MoedaRepository extends ChangeNotifier {
   getHistoricoMoeda(Moeda moeda) async {
     final response = await http.get(
       Uri.parse(
-        'https://api.coinbase.com/v2/assets/prices/${moeda.baseId}?base=BRL',
+        'https://api.coinbase.com/v2/assets/prices/',
       ),
     );
     List<Map<String, dynamic>> precos = [];

@@ -1,6 +1,6 @@
 import '../pages/carteira_page.dart';
 import '../pages/configuracoes_page.dart';
-import '../pages/favoritas_page.dart';
+// import '../pages/favoritas_page.dart';
 import '../pages/moedas_page.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
         controller: pc,
         children: [
           MoedasPage(),
-          FavoritasPage(),
+          // FavoritasPage(),
           CarteiraPage(),
           ConfiguracoesPage(),
         ],
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Todas'),
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favoritas'),
+          // BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favoritas'),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_balance_wallet), label: 'Carteira'),
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Conta'),
